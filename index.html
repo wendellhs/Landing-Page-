@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Responsive Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Logo</h1>
+
+      <secton class="menu">
+        <ul class="menu-list">
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Produtos</a></li>
+          <li><a href="#"></a>About</li>
+          <li><a href="#"></a>Contact</li>
+        </ul>
+
+        <button>
+          <i class="fas fa-times"></i>
+          <i class="fas fa fa-bars"></i>
+        </button>
+      </secton>
+    </header>
+
+    <section class="main">
+      <section class="left">
+        <p class="title">Information Technology</p>
+        <p class="msg">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quae
+          soluta sed itaque, qui modi tenetur cum velit harum deleniti?
+        </p>
+        <button class="cta">Learn More</button>
+      </section>
+
+      <section class="right">
+        <img src="/img/free.png" alt="Langing image" />
+      </section>
+    </section>
+    <script>
+      let menu = document.querySelector('.menu')
+      let menuBtn = document.querySelector('.menu button')
+      menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('opened')
+      })
+    </script>
+  </body>
+</html>
